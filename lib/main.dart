@@ -41,6 +41,22 @@ class Widget1 extends StatelessWidget{
         backgroundColor: Colors.blue[400],
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+
+      //menambahkan 2 buah bottom navigation bar
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),title: Text('Home'),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.people),title: Text('Profil'),
+          ),
+        ],
+        //warna dari bottom navigation bar
+        backgroundColor: Colors.deepOrange,
+        selectedItemColor: Colors.white,
+        unselectedItemColor: Colors.black,
+      ),
     );
   }
 }
