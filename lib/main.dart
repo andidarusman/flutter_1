@@ -15,12 +15,20 @@ class Widget1 extends StatelessWidget{
     //buat scaffold
     return new Scaffold(
       //buat halaman bagian title
+      //dan halaman utama warna background hijau
+      backgroundColor: Colors.green,
       appBar: new AppBar(
         title: new Text("Flutter App #1"),
+        //memberikan tulisan dengan backgroud merah
+        backgroundColor: Colors.redAccent,
       ),
       //buat halaman bagian body
       body: new Center(
-        child: new Text("Ini Stateless Widget"),
+        //buat text warna kuning
+        child: new Text(
+            "Ini Stateless Widget"
+        ,style: TextStyle(color: Colors.yellowAccent),
+        ),
       ),
     );
   }
